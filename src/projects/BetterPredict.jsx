@@ -9,7 +9,7 @@ const BetterPredict = ({ }) => {
         <Header />
         <h2 className='top'>Better Predict</h2>
         <div className='container'>
-            
+            <h3>Coming soon...</h3>
         </div>
       </div>
     </div>

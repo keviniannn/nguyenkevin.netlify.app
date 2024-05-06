@@ -6,7 +6,7 @@ import './Home.css';
 import Header from '../components/Header';
 
 const Home = () => {
-  const animation = useSpring({ opacity: 1, from: { opacity: 0 }, config: { duration: 1000 } });
+  const animation = useSpring({ opacity: 1, from: { opacity: 0 }, config: { duration: 500 } });
 
   return (
     <div className='body'>

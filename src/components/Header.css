@@ -14,21 +14,21 @@ ul {
 
 li {
   font-size: larger;
-  margin-bottom: 10px; /* Add margin between list items */
+  margin-bottom: 10px;
   padding-left: 10px;
-  color: blue; /* Set text color for list items */
-  cursor: pointer; /* Add pointer cursor for better UX */
-  text-align: left; /* Align text within list items to the left */
+  color: blue;
+  cursor: pointer;
+  text-align: left;
 }
 
 li:hover::before {
-  content: '❯'; /* Unicode character for chevron */
-  color: white; /* Color of the chevron */
-  margin-right: 5px; /* Add margin between chevron and text */
+  content: '❯';
+  color: white;
+  margin-right: 5px;
 }
 
 li:hover {
-  background-color: blue; /* Change background color on hover */
+  background-color: blue;
   color: white;
   border-radius: 0px;
 }

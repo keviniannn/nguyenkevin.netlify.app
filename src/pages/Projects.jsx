@@ -15,7 +15,6 @@ const Projects = ({ }) => {
             <li><Link to="/betterpredict" className='no-underline'>Better Predict (WIP)</Link></li>
             <li><Link to="/ootd" className='no-underline'>OOTD (WIP) </Link></li>
             <li><Link to="/noted" className='no-underline'>Noted</Link></li>
-            <li><Link to="/couplescalendar" className='no-underline'>Couple's Calendar</Link></li>
           </ul>
         </div>
       </div>

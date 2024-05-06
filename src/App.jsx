@@ -10,7 +10,6 @@ import Spotivents from './projects/Spotivents';
 import OOTD from './projects/OOTD';
 import Noted from './projects/Noted';
 import BetterPredict from './projects/BetterPredict';
-import CouplesCalendar from './projects/CouplesCalendar';
 
 const App = () => {
   return (
@@ -27,7 +26,6 @@ const App = () => {
           <Route path="/ootd" element={<OOTD />} />
           <Route path="/noted" element={<Noted />} />
           <Route path="/betterpredict" element={<BetterPredict />} />
-          <Route path="/couplescalendar" element={<CouplesCalendar />} />
         </Routes>
       </div>
     </Router>
