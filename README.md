@@ -14,6 +14,7 @@
 
 ## Technologies Used
 - JavaScript
+- CSS
 - Frameworks/Libraries: React
 - Hosting Platform: Netlify
 
