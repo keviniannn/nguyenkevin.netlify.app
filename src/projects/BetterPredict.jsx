@@ -7,9 +7,13 @@ const BetterPredict = ({ }) => {
     <div className='body'>
       <div className="fake-window">
         <Header />
-        <h2 className='top'>Better Predict</h2>
         <div className='container'>
-            <h3>Coming soon...</h3>
+          <div className='top'>
+            <h2>Better Predict</h2>
+          </div>
+          <div className='projects'>
+            <h3>Coming Soon...</h3>
+          </div>
         </div>
       </div>
     </div>

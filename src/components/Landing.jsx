@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { animated } from '@react-spring/web';
-import { useSpring, config } from '@react-spring/core';
 import './Landing.css';
 
 const Landing = ({ }) => {
@@ -40,8 +39,10 @@ const Landing = ({ }) => {
   return (
     <div className='body'>
       <div className='fake-window'>
-        <animated.span style={{ opacity: 1 }} className="welcome">{text}</animated.span>
-        <input type="text" value={inputValue} onChange={handleChange} style={{ visibility: 'hidden' }} />
+        <div className='landing'>
+          <animated.span style={{ opacity: 1 }} className="welcome">{text}</animated.span>
+          <input type="text" value={inputValue} onChange={handleChange} style={{ visibility: 'hidden' }} />
+        </div>
       </div>
     </div>
   );

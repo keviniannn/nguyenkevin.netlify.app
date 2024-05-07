@@ -13,7 +13,7 @@ const Home = () => {
       <div className="fake-window">
         <Header />
         <animated.div style={animation} className="animation-container">
-          <div>
+          <div className='home-title'>
             <h1 className='title'>KEVIN NGUYEN</h1>
             <h3 className='subtitle'>SOFTWARE ENGINEER</h3>
           </div>

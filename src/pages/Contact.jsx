@@ -35,12 +35,14 @@ const Contact = () => {
     <div className='body'>
       <div className="fake-window">
         <Header />
-        <h2 className='top'>Contact</h2>
-        <a className='mail' href="mailto:keviniannguyen@gmail.com">keviniannguyen@gmail.com</a>
         <div className='container'>
-          <Canvas camera={{ position: [0, 3, 10], fov: 60 }}>
-            <Scene />
-          </Canvas>
+          <h2 className='top'>Contact</h2>
+          <div className='content'>
+            <a href="mailto:keviniannguyen@gmail.com">keviniannguyen@gmail.com</a>
+            <Canvas camera={{ position: [0, 3, 11], fov: 60 }}>
+              <Scene />
+            </Canvas>
+          </div>
         </div>
       </div>
     </div>

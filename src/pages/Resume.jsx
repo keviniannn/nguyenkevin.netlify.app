@@ -6,8 +6,12 @@ const Resume = () => {
     <div className='body'>
       <div className="fake-window">
         <Header />
-        <h2 className='top'>Resume</h2>
-        <embed src="/KevinNguyenResume.pdf" type="application/pdf" width="60%" height="60%" />
+        <div className='container'>
+          <h2 className='top'>Resume</h2>
+          <div className='pdf'>
+            <embed src="/KevinNguyenResume.pdf" type="application/pdf" height="100%"/>
+          </div>
+        </div>
       </div>
     </div>
   );

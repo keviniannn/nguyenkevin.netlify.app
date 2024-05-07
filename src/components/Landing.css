@@ -1,29 +1,31 @@
-.welcome {
-  color: blue;
-  /* Neon green color */
-  font-size: x-large;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 8px solid blue;
-  /* Border color matches text color */
-  margin: 0;
-  padding: 0;
-  animation: typing calc(0.15s * var(--length)) steps(var(--length), end) forwards;
-  /* Adjust the duration dynamically based on text length */
+.landing {
+    display: flex;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    position: absolute;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    align-items: center;
 }
 
-.cursor {
-  height: 20px; /* Adjust cursor height as needed */
-  background-color: black; /* Cursor color */
-  margin-left: 2px; /* Add spacing between text and cursor */
+.welcome {
+    color: blue;
+    font-size: x-large;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 8px solid blue;
+    margin: 0;
+    padding: 0;
+    animation: typing calc(0.15s * var(--length)) steps(var(--length), end) forwards;
 }
 
 @keyframes typing {
-  from {
-    width: 0;
-  }
+    from {
+        width: 0;
+    }
 
-  to {
-    width: 100%;
-  }
+    to {
+        width: 100%;
+    }
 }

@@ -8,14 +8,16 @@ const Projects = ({ }) => {
     <div className='body'>
       <div className="fake-window">
         <Header />
-        <h2 className='top'>Projects</h2>
         <div className='container'>
-          <ul>
-            <li><Link to="/spotivents" className='no-underline'>Spotivents</Link></li>
-            <li><Link to="/betterpredict" className='no-underline'>Better Predict (WIP)</Link></li>
-            <li><Link to="/ootd" className='no-underline'>OOTD (WIP) </Link></li>
-            <li><Link to="/noted" className='no-underline'>Noted</Link></li>
-          </ul>
+          <h2 className='top'>Projects</h2>
+          <div className='content'>
+            <ul style={{width: '70%'}}>
+              <li><Link to="/spotivents" className='no-underline'>Spotivents</Link></li>
+              <li><Link to="/betterpredict" className='no-underline'>Better Predict (WIP)</Link></li>
+              <li><Link to="/ootd" className='no-underline'>OOTD (WIP) </Link></li>
+              <li><Link to="/noted" className='no-underline'>Noted</Link></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

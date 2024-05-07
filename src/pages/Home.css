@@ -1,3 +1,13 @@
+.home-title {
+    padding: 25px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
 .footer {
     display: flex;
     padding: 25px;
@@ -12,10 +22,11 @@
     display: flex;
     padding: 25px;
     margin: 0;
-    position: absolute;
-    top: 10%;
+    position: fixed;
+    top: 8%;
     left: 50%;
     transform: translate(-50%, -50%);
+    letter-spacing: 2px;
 }
 
 .title {
@@ -23,7 +34,7 @@
     font-weight: 800;
     font-style: normal;
     font-size: xx-large;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     color: blue;
     padding: 10px;
     padding-bottom: 0px;
@@ -36,6 +47,7 @@
     font-size: large;
     font-style: italic;
     align-self: center;
+    letter-spacing: 2px;
     padding: 30px;
     padding-top: 0px;
     padding-bottom: 10px;
@@ -48,6 +60,15 @@
     margin: 25px;
 }
 
-.mail {
-    top: 50%;
+.projects {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 25px;
+    margin-top: 50px;
+    position: fixed;
+    align-self: center;
+    align-items: center;
+    justify-items: center;
+    justify-self: center;
 }

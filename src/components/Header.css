@@ -1,7 +1,9 @@
 .header {
-  position: fixed;
-  top: calc(50% - 50vh + 70px);
-  left: calc(50% - 40vw + 0px);
+  position: sticky;
+  /*top: calc(50% - 50vh + 70px);
+  left: calc(50% - 40vw + 0px);*/
+  top: 0;
+  left: 0;
   width: 175px;
   padding: 20px;
   z-index: 999;
