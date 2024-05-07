@@ -18,18 +18,18 @@ const Landing = ({ }) => {
       } else {
         clearInterval(intervalId);
       }
-    }, 75); // Adjust interval for typing speed (milliseconds)
+    }, 75);
     return () => clearInterval(intervalId);
   }, [currentIndex, fullText]);
 
   const navigate = useNavigate();
   const handleKeyDown = (event) => {
-    navigate('/home'); // Replace with your desired destination
+    navigate('/home');
   };
 
   useEffect(() => {
-    document.addEventListener('keydown', handleKeyDown); // Listen for keydown event on document
-    return () => document.removeEventListener('keydown', handleKeyDown); // Clean up event listener
+    document.addEventListener('keydown', handleKeyDown);
+    return () => document.removeEventListener('keydown', handleKeyDown);
   }, [handleKeyDown]);
 
   const handleChange = (event) => {
