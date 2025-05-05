@@ -6,10 +6,6 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
-import Spotivents from './projects/Spotivents';
-import OOTD from './projects/OOTD';
-import Noted from './projects/Noted';
-import BetterPredict from './projects/BetterPredict';
 
 const App = () => {
   return (
@@ -22,10 +18,6 @@ const App = () => {
           <Route path="/projects" element={<Projects />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/spotivents" element={<Spotivents />} />
-          <Route path="/ootd" element={<OOTD />} />
-          <Route path="/noted" element={<Noted />} />
-          <Route path="/betterpredict" element={<BetterPredict />} />
         </Routes>
       </div>
     </Router>
