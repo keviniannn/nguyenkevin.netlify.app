@@ -1,26 +1,16 @@
 import React from "react";
-import { animated, useSpring } from "@react-spring/web";
 import { Link } from "react-router-dom";
 
 import Header from "../components/Header";
 
 const Projects = () => {
-  const animation = useSpring({
-    opacity: 1,
-    from: { opacity: 0 },
-    config: { duration: 500 },
-  });
-
   return (
     <div className="w-full h-screen px-4 py-6 box-border text-blue-700">
       <div className="relative w-full h-full max-w-4xl mx-auto border-4 border-blue-700 bg-stone-100 px-6 py-8 flex flex-col gap-10 overflow-hidden box-border">
         <Header />
-        <animated.div
-          style={animation}
-          className="flex-1 flex flex-col items-center justify-center text-center gap-6 overflow-hidden"
-        >
+        <div className="flex-1 flex flex-col items-center justify-center text-center gap-2 overflow-hidden">
           <h2 className="text-3xl tracking-wider uppercase">Projects</h2>
-          <ul className="w-full max-w-xl space-y-3 text-blue-700">
+          <ul className="w-full max-w-xl text-blue-700">
             <li>
               <Link
                 to="https://github.com/keviniannn/credis"
@@ -82,7 +72,7 @@ const Projects = () => {
               </Link>
             </li>
           </ul>
-        </animated.div>
+        </div>
       </div>
     </div>
   );
