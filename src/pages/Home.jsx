@@ -13,17 +13,17 @@ const Home = () => {
 
   return (
     <div className="w-full h-screen px-4 py-6 box-border text-blue-700">
-      <animated.div
-        style={animation}
-        className="relative w-full h-full max-w-4xl mx-auto border-4 border-blue-700 bg-stone-100 px-6 py-8 flex flex-col gap-10 overflow-hidden box-border"
-      >
+      <div className="relative w-full h-full max-w-4xl mx-auto border-4 border-blue-700 bg-stone-100 px-6 py-8 flex flex-col gap-10 overflow-hidden box-border">
         <Header />
-        <div className="flex-1 flex flex-col items-center justify-center text-center gap-2 overflow-hidden">
+        <animated.div
+          style={animation}
+          className="flex-1 flex flex-col items-center justify-center text-center gap-2 overflow-hidden"
+        >
           <h1 className="text-4xl tracking-wider uppercase">Kevin Nguyen</h1>
           <h3 className="text-xl tracking-wide italic uppercase">
             Software Engineer
           </h3>
-        </div>
+        </animated.div>
         <div className="grid grid-cols-2 gap-4 place-items-center max-w-md mx-auto">
           <Link
             to="https://www.linkedin.com/in/keviniann/"
@@ -42,7 +42,7 @@ const Home = () => {
             <p className="text-md">GitHub</p>
           </Link>
         </div>
-      </animated.div>
+      </div>
     </div>
   );
 };
