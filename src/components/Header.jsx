@@ -1,36 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import "./Header.css";
-
 const Header = ({}) => {
   return (
-    <div className="header">
+    <div className="absolute top-4 left-4 z-50 px-4 py-3">
       <ul>
-        <li>
-          <Link to="/" className="no-underline">
-            Home
-          </Link>
+        <li className="pl-2 w-32 hover:bg-blue-700 hover:text-stone-100 text-md">
+          <Link to="/">Home</Link>
         </li>
-        <li>
-          <Link to="/about" className="no-underline">
-            About
-          </Link>
+        <li className="pl-2 w-32 hover:bg-blue-700 hover:text-stone-100 text-md">
+          <Link to="/about">About</Link>
         </li>
-        <li>
-          <Link to="/projects" className="no-underline">
-            Projects
-          </Link>
+        <li className="pl-2 w-32 hover:bg-blue-700 hover:text-stone-100 text-md">
+          <Link to="/projects">Projects</Link>
         </li>
-        <li>
-          <Link to="/resume" className="no-underline">
-            Resume
-          </Link>
+        <li className="pl-2 w-32 hover:bg-blue-700 hover:text-stone-100 text-md">
+          <Link to="/resume">Resume</Link>
         </li>
-        <li>
-          <Link to="/contact" className="no-underline">
-            Contact
-          </Link>
+        <li className="pl-2 w-32 hover:bg-blue-700 hover:text-stone-100 text-md">
+          <Link to="/contact">Contact</Link>
         </li>
       </ul>
     </div>

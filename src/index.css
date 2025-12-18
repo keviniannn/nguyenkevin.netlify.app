@@ -1,81 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins");
 @import "tailwindcss";
 
+:root,
+html,
 body {
-    background-color: blue;
-    color: blue;
-    font-family: "Poppins", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    width: 100%;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100vh;
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden;
     background-image: url("./assets/beach.JPG");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
-.fake-window::-webkit-scrollbar {
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
     display: none;
-}
-
-.fake-window {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    height: 80%;
-    background-color: white;
-    border: 3px solid blue;
-    border-radius: 0px;
-    display: flex;
-    overflow: auto;
-}
-
-.container {
-    display: flex;
-    transform: translate(-50%, -50%);
-    flex-direction: column;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-}
-
-.content {
-    display: flex;
-    transform: translate(-50%, -50%);
-    flex-direction: column;
-    position: absolute;
-    width: 60%;
-    top: 50%;
-    left: 50%;
-    align-items: center;
-    text-align: center;
-}
-
-.no-underline {
-    text-decoration: none;
-    color: inherit;
-}
-
-.photo {
-    width: 80%;
-    padding: 10px;
-}
-
-.pdf {
-    display: flex;
-    transform: translate(-50%, -50%);
-    flex-direction: column;
-    position: absolute;
-    width: 60%;
-    height: 60%;
-    top: 50%;
-    left: 50%;
 }
