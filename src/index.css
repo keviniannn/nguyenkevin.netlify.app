@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins");
+@import "tailwindcss";
 
 body {
     background-color: blue;
@@ -11,7 +12,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-image: url('./assets/beach.JPG');
+    background-image: url("./assets/beach.JPG");
     background-size: cover;
     background-position: center;
 }
