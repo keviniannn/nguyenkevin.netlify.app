@@ -1,77 +1,77 @@
-import React from 'react';
-import Header from '../components/Header';
+import React from "react";
+import { Link } from "react-router-dom";
+
+import Header from "../components/Header";
 
 const Projects = () => {
   return (
-    <div className='body'>
-      <div className="fake-window">
+    <div className="w-full h-screen px-4 py-6 box-border text-blue-700">
+      <div className="relative w-full h-full max-w-4xl mx-auto border-4 border-blue-700 bg-stone-100 px-6 py-8 flex flex-col gap-10 overflow-hidden box-border">
         <Header />
-        <div className='container'>
-          <h2 className='top'>Projects</h2>
-          <div className='content'>
-            <ul style={{ width: '70%' }}>
-              <li>
-                <a
-                  href="https://github.com/keviniannn/bring-your-own"
-                  className="no-underline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Bring Your Own (Potluck App)
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/keviniannn/national-basketball-predictions"
-                  className="no-underline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  National Basketball Predictions
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/kourosh-alasti/constellations"
-                  className="no-underline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Constellations (Hackathon)
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/keviniannn/spotivents"
-                  className="no-underline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Spotivents
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/keviniannn/ootd"
-                  className="no-underline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  OOTD (WIP)
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/keviniannn/noted"
-                  className="no-underline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Noted
-                </a>
-              </li>
-            </ul>
-          </div>
+        <div className="flex-1 flex flex-col items-center justify-center text-center gap-2 overflow-hidden">
+          <h2 className="text-3xl tracking-wider uppercase">Projects</h2>
+          <ul className="w-full max-w-xl text-blue-700">
+            <li>
+              <Link
+                to="https://github.com/keviniannn/credis"
+                className="block text-center w-64 mx-auto hover:bg-blue-700 hover:text-stone-100"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Credis
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="https://github.com/keviniannn/scraped-tomatoes"
+                className="block text-center w-64 mx-auto hover:bg-blue-700 hover:text-stone-100"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Scraped Tomatoes
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="https://kevspizza.netlify.app/"
+                className="block text-center w-64 mx-auto hover:bg-blue-700 hover:text-stone-100"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Pizza Blog
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="https://github.com/keviniannn/bring-your-own"
+                className="block text-center w-64 mx-auto hover:bg-blue-700 hover:text-stone-100"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Bring Your Own
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="https://github.com/keviniannn/national-basketball-predictions"
+                className="block text-center w-64 mx-auto hover:bg-blue-700 hover:text-stone-100"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                National Basketball Predictions
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="https://github.com/kourosh-alasti/constellations"
+                className="block text-center w-64 mx-auto hover:bg-blue-700 hover:text-stone-100"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Constellations (Hackathon)
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
